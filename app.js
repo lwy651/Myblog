@@ -13,6 +13,8 @@ const index = require('./routes/index');
 const users = require('./routes/users');
 const login = require('./routes/login');
 
+app.keys = ['xiao5 blog'];
+
 // middlewares
 app.use(convert(bodyparser));
 app.use(convert(json()));

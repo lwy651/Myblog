@@ -5,7 +5,8 @@ router.get('/', async function (ctx, next) {
     title: '小五blog'
   };
 
-  await ctx.render('index', {
-  });
+  // await ctx.render('index', {
+  // });
+  ctx.body = ctx;
 })
 module.exports = router;
